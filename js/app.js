@@ -11,7 +11,7 @@
 
 // app.js
 
-var app = angular.module('routerApp', ['ui.router']);
+var app = angular.module('app', ['ui.router']);
 
 app.controller('homeController', ['$scope', function ($scope) {
   "use strict";
