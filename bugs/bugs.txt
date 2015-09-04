@@ -1,0 +1,2 @@
+1. CSS with images is off
+2. Routing takes you further down into a page.
