@@ -7,6 +7,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
           url: '/home',
           templateUrl: 'partials/home.html'
         })
+        .state('aboutMe', {
+          url: '/aboutMe',
+          templateUrl: 'partials/aboutMe.html'
+        })
         .state('education', {
           url: '/education',
           templateUrl: 'partials/education.html'
