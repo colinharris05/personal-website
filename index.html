@@ -13,19 +13,17 @@
   <body ng-controller='homeController' style='background: white;'>
 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
-            <a class="navbar-brand" ui-sref="home">Colin Harris</a>
-        </div>
-        <ul class="nav navbar-nav">
-            <li><a ui-sref="aboutMe">About Me</a></li>  
-            <li><a ui-sref="education">Education</a></li>
-            <li><a ui-sref="experience">Experience</a></li>
-            <li><a ui-sref="projects">Personal Projects</a></li>
-        </ul>
+				<a ui-sref="home" class='navbar-brand'>Colin Harris</a>
+				<ul class="nav navbar-nav">
+					<li><a ui-sref="aboutMe">About Me</a></li>  
+					<li><a ui-sref="education">Education</a></li>
+					<li><a ui-sref="experience">Experience</a></li>
+					<li><a ui-sref="projects">Personal Projects</a></li>
+				</ul>
     </nav>
     
     <div class="container">
-      <div ui-view></div>
+      <div ui-view autoscroll='true'></div>
     </div>
     
   </body>
