@@ -22,5 +22,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('projects', {
           url: '/projects',
           templateUrl: 'partials/projects.html'
+        })
+        .state('contact', {
+          url: '/contact',
+          templateUrl: 'partials/contact.html'
         });     
 });
