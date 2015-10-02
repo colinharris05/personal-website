@@ -27,8 +27,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
           url: '/contact',
           templateUrl: 'partials/contact.html'
         })  
-				.state('skills', {
-          url: '/skills',
-          templateUrl: 'partials/skills.html'
-        });    
+//				.state('skills', {
+//          url: '/skills',
+//          templateUrl: 'partials/skills.html'
+//        });    
 });
