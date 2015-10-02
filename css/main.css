@@ -23,18 +23,6 @@ hr {
     background-color: #333; /* Modern Browsers */
 }
 
-.experience_logos {
-	margin-left: 10px;
-	margin-right: 10px;
-	position: relative;
-	top: -9px;
-}
-
-.uw_logo {
-	display:block;
-    margin:auto;
-}
-
 p {
  font-size: 20px; 
 }
@@ -42,7 +30,7 @@ p {
 ul {
  font-size: 15px;
 }
-  
+
 
 #myPic {
 	border: 2px solid black;
@@ -88,19 +76,29 @@ ul {
 	}
 }
 
-/*
-
-.myContainer {
-  background: white; 
-  padding-left:  10px;
-  padding-right: 10px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  margin: 10px;
+.skill {
+	list-style-type: none;
+	font-size: 17px;
 }
-*/
 
 .descriptionText {
   font-size: 18px;
 	margin-top: 5px;
+}
+
+.level {
+	position:relative;
+	left: 30px;
+}
+
+.experience_logos {
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+	top: -9px;
+}
+
+.uw_logo {
+	display:block;
+    margin:auto;
 }
