@@ -5,16 +5,14 @@
 body { 
 	padding-top: 70px; // Used to pad fixed navbar
   min-height:100%; height:auto;
-  background-color: #DCDCDC;
-}
-
-a.md-default-theme:not(.md-button), a:not(.md-button) {
-  color: blue;
+  background-color: #e3e3e3;
 }
 
 footer {
-  border-top: solid lightGray 1px;
+  border-top: solid #919395 1px;
   margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 hr {
@@ -57,12 +55,12 @@ li {
 	padding: 10px;
 }
 
+#projectPic { 
 /*
-#projectPic:hover { 
 	transform:scale(3,3);
 	transform-origin:0 0; 
-}
 */
+}
 #projectsHeader {
   text-align: center;
   margin-bottom: 20px; 
@@ -75,6 +73,9 @@ li {
   color:white; 
 }
 
+a.md-default-theme:not(.md-button), a:not(.md-button) {
+  color: rgb(70, 70, 248);
+}
 
 @media (min-width: 768px) {
     .navbar .navbar-nav {
@@ -116,6 +117,8 @@ li {
 	left: 30px;
 }
 
+/* --Images-- */
+
 .experience_logos {
 	margin-left: 10px;
 	margin-right: 10px;
@@ -126,4 +129,10 @@ li {
 .uw_logo {
 	display:block;
   margin:auto;  
+}
+
+/* --Time duration inside cards-- */
+.timeRange {
+  font-size: 20px;
+  float:right;
 }
