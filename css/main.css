@@ -43,7 +43,7 @@ li {
 }
 
 #myPic {
-	border: 2px solid black;
+	border: 2px solid #5D5D5D;
 	border-radius: 50%;
 	box-sizing: content-box;
 	
