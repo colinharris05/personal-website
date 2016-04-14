@@ -78,21 +78,16 @@ a.md-default-theme:not(.md-button), a:not(.md-button) {
 }
 
 @media (min-width: 768px) {
-    .navbar .navbar-nav {
-			display: inline-block;
-      float: right;
-      vertical-align: top;
-			font-size: 120%
-    }
-
-    .navbar .navbar-collapse {
-      text-align: center;
-    }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: right;
+    vertical-align: top;
+    font-size: 120%
+  }
 	.navbar-brand {
 		position: absolute;
 		left: 0px;
 	}
-	
 	.navbar {
     position: absolute;
     width: 100%;
