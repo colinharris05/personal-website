@@ -80,7 +80,7 @@ li {
 }
 #projectsHeader {
   text-align: center;
-  margin-bottom: 20px; 
+  margin-bottom: 35px; 
 }
 
 #projectsBtn {
@@ -150,5 +150,6 @@ a, a.md-default-theme:not(.md-button), a:not(.md-button) {
 /* --Time duration inside cards-- */
 .timeRange {
   font-size: 20px;
+  color: #6a6a6a;
   float:right;
 }

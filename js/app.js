@@ -1,8 +1,8 @@
 var app = angular.module('app', ['ui.router', 'ngMaterial']);
 
 app.controller('homeController', ['$rootScope', '$scope', '$mdDialog', function ($rootScope, $scope, $mdDialog) {
-  "use strict";
-
+  "use strict";  
+  
 //  $scope.showAlert = function(ev) {
 //    // Appending dialog to document.body to cover sidenav in docs app
 //    // Modal dialogs should fully cover application
@@ -20,3 +20,14 @@ app.controller('homeController', ['$rootScope', '$scope', '$mdDialog', function 
 //  };
 
 }]);
+
+//app.controller('contactController', ['$rootScope', '$scope', function($rootScope, $scope) {
+//  $scope.user = {
+//    name: '',
+//    email: ''
+//  };
+//  
+//  $scope.submitContact = function() {
+//    alert("Hi!");
+//  };
+//}]);
