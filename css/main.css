@@ -136,7 +136,7 @@ a, a.md-default-theme:not(.md-button), a:not(.md-button) {
 /* --Images-- */
 
 .experience_logos {
-	margin-left: 10px;
+	margin-left: 15px;
 	margin-right: 10px;
 	position: relative;
 	top: -9px;
@@ -152,4 +152,10 @@ a, a.md-default-theme:not(.md-button), a:not(.md-button) {
   font-size: 20px;
   color: #6a6a6a;
   float:right;
+}
+
+
+/* --Larger gap between cards-- */
+md-card {
+  margin-bottom: 20px;
 }
