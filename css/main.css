@@ -3,7 +3,7 @@
 }
 
 body { 
-	padding-top: 70px; // Used to pad fixed navbar
+	padding-top: 70px; /* Used to pad fixed navbar */
   min-height:100%; height:auto;
   background-color: #f2f2f2;
 }
