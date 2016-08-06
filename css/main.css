@@ -5,7 +5,7 @@
 body { 
 	padding-top: 70px; // Used to pad fixed navbar
   min-height:100%; height:auto;
-  background-color: #e3e3e3;
+  background-color: #d6d6d6;
 }
 
 footer {
@@ -78,7 +78,8 @@ li {
 	transform-origin:0 0; 
 */
 }
-#projectsHeader {
+
+.headerText {
   text-align: center;
   margin-bottom: 35px; 
 }
@@ -158,4 +159,5 @@ a, a.md-default-theme:not(.md-button), a:not(.md-button) {
 /* --Larger gap between cards-- */
 md-card {
   margin-bottom: 20px;
+  background-color: white;
 }
