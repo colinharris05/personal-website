@@ -4,7 +4,7 @@
 
 body { 
 	padding-top: 70px; /* Used to pad fixed navbar */
-  min-height:100%; height:auto;
+  height:auto;
   background-color: #f2f2f2;
 }
 
@@ -25,8 +25,7 @@ h1 {
   text-decoration: none;
 }
 
-#ndsc:hover 
-{
+#ndsc:hover {
      color: purple; 
      text-decoration: none; 
      cursor: pointer;
@@ -52,7 +51,7 @@ ul {
 }
 
 li {
- display:inline; 
+ display:inline;
 }
 
 .travelList > li {
@@ -100,22 +99,14 @@ a, a.md-default-theme:not(.md-button), a:not(.md-button) {
 }
 
 @media (min-width: 768px) {
-  .navbar .navbar-nav {
-    display: inline-block;
+  .navbar-nav {
     float: right;
-    vertical-align: top;
-    font-size: 120%
+    font-size: 125%;
+    margin-right: -50px;
   }
 	.navbar-brand {
 		position: absolute;
 		left: 0px;
-	}
-	.navbar {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    margin: auto;
 	}
 }
 
