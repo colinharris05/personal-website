@@ -3,7 +3,7 @@
 }
 
 body { 
-	padding-top: 70px; /* Used to pad fixed navbar */
+  padding-top: 70px; /* Used to pad fixed navbar */
   height:auto;
   background-color: #f2f2f2;
 }
@@ -16,8 +16,8 @@ footer {
 }
 
 h1 {
-    color: #333;
-    text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 
 #ndsc {
@@ -26,17 +26,17 @@ h1 {
 }
 
 #ndsc:hover {
-     color: purple; 
-     text-decoration: none; 
-     cursor: pointer;
+   color: purple; 
+   text-decoration: none; 
+   cursor: pointer;
 }
 
 hr {
-    border: none;
-    height: 1px;
-    /* Set the hr color */
-    color: #333; /* old IE */
-    background-color: #333; /* Modern Browsers */
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
 }
 
 p {
@@ -47,11 +47,11 @@ p {
 }
 
 ul {
- font-size: 15px;
+  font-size: 15px;
 }
 
 li {
- display:inline;
+  display:inline;
 }
 
 .travelList > li {
@@ -125,18 +125,28 @@ a, a.md-default-theme:not(.md-button), a:not(.md-button) {
 	left: 30px;
 }
 
+.center_text {
+  text-align: center;
+}
+
 /* --Images-- */
 
 .experience_logos {
-	margin-left: 15px;
-	margin-right: 10px;
-	position: relative;
-	top: -9px;
+  margin-left: 15px;
+  margin-right: 10px;
+  position: relative;
+  top: -9px;
 }
 
 .uw_logo {
-	display:block;
+  display:block;
   margin:auto;
+}
+
+.project-pic {
+  height:200px; 
+  width: 250px;
+  border-radius: 10px !important;
 }
 
 /* --Time duration inside cards-- */
