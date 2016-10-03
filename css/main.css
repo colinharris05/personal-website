@@ -64,8 +64,8 @@ li {
 	box-sizing: content-box;
 	
 	display:block;
-  margin-left:auto;
-  margin-right:auto; 
+    margin-left:auto;
+    margin-right:auto; 
 	width: 250px; 
 	height: 250px; 
 	padding: 10px;
@@ -125,8 +125,15 @@ a, a.md-default-theme:not(.md-button), a:not(.md-button) {
 	left: 30px;
 }
 
+
+/* --Common-- */
+
 .center_text {
   text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 /* --Images-- */
