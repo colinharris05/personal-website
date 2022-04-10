@@ -1,35 +1,31 @@
-import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import sharedStyles from "../styles/Shared.module.css";
 import styles from "../styles/Home.module.css";
+import type { NextPage } from "next";
 
-const Home: NextPage = () => {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Colin Harris</title>
-        <meta name="description" content="Software engineer" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
+const Home: NextPage = () => (
+  <>
+    <Head>
+      <title>Colin Harris</title>
+      <meta name="description" content="Software engineer" />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+    <div className={sharedStyles.container}>
+      <main className={sharedStyles.main}>
         <div className="flex flex-col">
           <div className="flex flex-col items-center justify-center pb-10">
-            <h1 className={styles.title}>Colin Harris</h1>
-            <hr className={styles.titleSpacer} />
-            <h2 className={styles.subtitle}>Software Engineer</h2>
+            <h1 className={styles.title}>Software Engineer</h1>
           </div>
 
-          <div>
-            <Image
-              alt="Colin Harris portrait"
-              className="rounded-lg"
-              height={300}
-              src="/images/colinharris.jpg"
-              width={450}
-            />
-          </div>
+          <Image
+            alt="Self portrait"
+            className="rounded-lg"
+            height={300}
+            src="/images/portrait.jpg"
+            width={450}
+          />
         </div>
 
         <p className={styles.description}>
@@ -51,7 +47,7 @@ const Home: NextPage = () => {
         </a>
       </footer>
     </div>
-  );
-};
+  </>
+);
 
 export default Home;
