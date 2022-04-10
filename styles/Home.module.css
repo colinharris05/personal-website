@@ -22,32 +22,36 @@
 }
 
 .footer a {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+  justify-content: center;
 }
 
 .title {
-  margin: 0;
+  font-size: 3.5rem;
   line-height: 1.15;
-  font-size: 4rem;
+  margin: 0;
+}
+
+.titleSpacer {
+  border-radius: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  width: 350px;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 2rem;
 }
 
 .title,
 .description {
   text-align: center;
+}
+
+.description a {
+  color: rgb(244, 93, 72);
 }
 
 .description {
