@@ -35,7 +35,6 @@
   cursor: pointer;
   margin: 1rem;
   max-width: 325px;
-  min-height: 175px;
   min-width: 325px;
   padding: 1.5rem;
   text-align: left;
@@ -48,6 +47,10 @@
 .card:active {
   color: #f45d48;
   border-color: #f45d48;
+}
+.presentJob {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-color: #00000080;
 }
 
 .grid {
