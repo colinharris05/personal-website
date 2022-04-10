@@ -14,6 +14,13 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+        <Image
+          alt="Colin Harris portrait"
+          height={400}
+          src="/images/colinharris.jpg"
+          width={600}
+        />
+
         <h1 className={styles.title}>Colin Harris</h1>
         <hr className={styles.titleSpacer} />
         <h2 className={styles.subtitle}>Software Engineer</h2>
