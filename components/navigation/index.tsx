@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex flex-wrap items-center p-3">
+      <nav className="flex flex-wrap items-center m-4 pb-5 border-b">
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4 ">
             <span className="text-xl font-bold uppercase tracking-wide">
@@ -50,16 +50,6 @@ const Navbar = () => {
             <Link href="/work">
               <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-[#f45d48] hover:text-white">
                 Work
-              </a>
-            </Link>
-            <Link href="/about">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-[#f45d48] hover:text-white">
-                About
-              </a>
-            </Link>
-            <Link href="/">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-[#f45d48] hover:text-white">
-                Contact
               </a>
             </Link>
           </div>
