@@ -12,7 +12,7 @@ const Home: NextPage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <div className={sharedStyles.container}>
-      <main className="pt-[10rem]">
+      <main className=" flex items-center justify-center min-h-[80vh]">
         <div className="flex flex-row-reverse flex-wrap justify-around">
           <Image
             alt="Self portrait"
@@ -34,9 +34,9 @@ const Home: NextPage = () => (
               </div>
             </h1>
             <h3 className="break-words text-lg">
-              I&apos;m Colin Harris. A software engineer living near Denver, CO.
-              I focused on full-stack web development, mostly with Rails and
-              ReactJS. I love building things that can make a difference.
+              I&apos;m Colin Harris, a software engineer living in the Denver,
+              CO area. I focus on full-stack web development, mostly with Rails
+              and ReactJS. I love building things that can make a difference.
             </h3>
           </div>
         </div>
