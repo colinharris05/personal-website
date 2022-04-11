@@ -13,7 +13,7 @@ const Home: NextPage = () => (
     </Head>
     <div className={sharedStyles.container}>
       <main className=" flex items-center justify-center min-h-[80vh]">
-        <div className="flex flex-row-reverse flex-wrap justify-around">
+        <div className="flex flex-row-reverse flex-wrap justify-around gap-6">
           <Image
             alt="Self portrait"
             className="rounded-lg"
