@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex flex-wrap items-center m-4 pb-5 border-b">
+      <nav className="flex flex-wrap items-center m-3 pb-3 border-b">
         {pathname !== "/" && (
           <Link href="/">
             <a className="inline-flex items-center px-2 mr-4 ">
@@ -49,7 +49,7 @@ const Navbar = () => {
             <Link href="/">
               <a
                 className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-[#f45d48] hover:text-white "
-                onClick={() => setIsMenuOpen(false)}
+                onClick={handleClick}
               >
                 Home
               </a>
@@ -57,9 +57,17 @@ const Navbar = () => {
             <Link href="/work">
               <a
                 className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-[#f45d48] hover:text-white"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={handleClick}
               >
                 Work
+              </a>
+            </Link>
+            <Link href="/about">
+              <a
+                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-[#f45d48] hover:text-white"
+                onClick={handleClick}
+              >
+                About
               </a>
             </Link>
           </div>

@@ -13,8 +13,8 @@ const Home: NextPage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Layout classNames="max-w-7xl">
-      <div className="flex flex-wrap items-center justify-around gap-18 min-h-[80vh] pt-20 pb-20">
-        <div className="max-w-[30rem] flex flex-col gap-2 py-8">
+      <div className="flex flex-col md:flex-row items-center justify-around gap-22 min-h-[80vh] w-full">
+        <div className="max-w-[30rem] flex flex-col gap-2 py-3">
           <h1 className="break-words fancy-font font-bold text-5xl">
             Colin Harris
           </h1>
@@ -27,18 +27,19 @@ const Home: NextPage = () => (
             </Link>
           </h2>
           <br />
-          <h3 className="break-words text-lg">
-            I work as a growth engineer at Gusto. I&apos;ve been building apps
-            since 2015 and love working with Ruby on Rails and React.
+          <h3 className="break-words text-lg md:pr-20 pr-0 pb-8">
+            I work as a full-stack growth engineer at Gusto, working mostly with
+            Ruby on Rails and React. I&apos;ve been building apps since 2015 and
+            love piecing together the legos of full-stack development.
           </h3>
         </div>
         <div className="flex flex-col items-end justify-center gap-1">
           <Image
             alt="Standing in front of a hazy Los Angeles"
             className="rounded-md"
-            height={4032 * 0.12}
+            height={4032 * 0.14}
             src="/images/portrait.png"
-            width={3024 * 0.12}
+            width={3024 * 0.14}
           />
           <span className="text-sm text-slate-400 pr-1">
             Hike above a very hazy LA.
