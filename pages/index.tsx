@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import sharedStyles from "../styles/Shared.module.css";
 import type { NextPage } from "next";
+import Layout from "../components/layout";
 
 const Home: NextPage = () => (
   <>
@@ -11,37 +12,40 @@ const Home: NextPage = () => (
       <meta name="description" content="Software engineer" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <div className={sharedStyles.container}>
-      <main className=" flex items-center justify-center min-h-[80vh]">
-        <div className="flex flex-row-reverse flex-wrap justify-around gap-6">
-          <Image
-            alt="Self portrait"
-            className="rounded-lg"
-            height={255}
-            src="/images/portrait.jpg"
-            width={382.5}
-          />
-          <div className="flex flex-col justify-center mb-8 mt-8 max-w-[25rem]">
-            <h1 className="break-words font-bold text-3xl pb-5">
-              Growth engineering{" "}
-              <div>
-                with{" "}
-                <Link href="https://www.gusto.com">
-                  <a className="text-[#f45d48]" target="_blank">
-                    Gusto.
-                  </a>
-                </Link>
-              </div>
-            </h1>
-            <h3 className="break-words text-lg">
-              I&apos;m Colin Harris, a software engineer living in the Denver,
-              CO area. I focus on full-stack web development, mostly with Rails
-              and ReactJS. I love building things that can make a difference.
-            </h3>
-          </div>
+    <Layout classNames="max-w-7xl">
+      <div className="flex flex-wrap items-center justify-around gap-18 min-h-[80vh] pt-20 pb-20">
+        <div className="max-w-[30rem] flex flex-col gap-2 py-8">
+          <h1 className="break-words fancy-font font-bold text-5xl">
+            Colin Harris
+          </h1>
+          <h2 className=" text-2xl">
+            Software engineer with{" "}
+            <Link href="https://www.gusto.com">
+              <a className="text-[#f45d48]" target="_blank">
+                Gusto.
+              </a>
+            </Link>
+          </h2>
+          <br />
+          <h3 className="break-words text-lg">
+            I work as a growth engineer at Gusto. I&apos;ve been building apps
+            since 2015 and love working with Ruby on Rails and React.
+          </h3>
         </div>
-      </main>
-    </div>
+        <div className="flex flex-col items-end justify-center gap-1">
+          <Image
+            alt="Standing in front of a hazy Los Angeles"
+            className="rounded-md"
+            height={4032 * 0.12}
+            src="/images/portrait.png"
+            width={3024 * 0.12}
+          />
+          <span className="text-sm text-slate-400 pr-1">
+            Hike above a very hazy LA.
+          </span>
+        </div>
+      </div>
+    </Layout>
   </>
 );
 

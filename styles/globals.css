@@ -18,3 +18,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.fancy-font {
+  font-family: "Nunito", sans-serif;
+}

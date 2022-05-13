@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import Main from "../../components/main";
-import sharedStyles from "../../styles/Shared.module.css";
 import type { NextPage } from "next";
+import Layout from "../../components/layout";
 
 const JOBS = [
   {
@@ -56,29 +55,41 @@ const Work: NextPage = () => (
       <meta name="description" content="Software engineer" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <div className={sharedStyles.container}>
-      <Main>
-        <h1 className="text-4xl text-center pt-8 pb-8">Work experience</h1>
-        <div className={sharedStyles.grid}>
-          {JOBS.map(({ company, description, endDate, href, startDate }) => (
-            <Link href={href} key={company}>
-              <a target="_blank">
-                <div
-                  className={`${sharedStyles.card} ${
-                    endDate === "Present" ? sharedStyles.presentJob : ""
-                  }`}
+    <div>
+      <Layout>
+        <h1 className="text-5xl font-bold text-center pt-16 pb-16 fancy-font">
+          Work experience
+        </h1>
+        <div className="flex flex-col gap-4 mb-10">
+          {JOBS.map(
+            ({ company, description, endDate, href, startDate }, index) => (
+              <Link href={href} key={company}>
+                <a
+                  className="hover:bg-slate-100 px-4 py-6 rounded"
+                  target="_blank"
                 >
-                  <h3>{company}</h3>
-                  <p>
-                    {startDate} - {endDate}
-                  </p>
+                  <div className="flex items-center justify-between pb-3">
+                    <h3
+                      className={`font-bold text-2xl mr-4 ${
+                        index === 0
+                          ? "text-[#f45d48] border-b-[#f45d48] border-b-2 pb-1"
+                          : ""
+                      }`}
+                      style={{ color: index === 0 ? "" : "" }}
+                    >
+                      {company}
+                    </h3>
+                    <span>
+                      {startDate} - {endDate}
+                    </span>
+                  </div>
                   <p>{description}</p>
-                </div>
-              </a>
-            </Link>
-          ))}
+                </a>
+              </Link>
+            ),
+          )}
         </div>
-      </Main>
+      </Layout>
     </div>
   </>
 );
