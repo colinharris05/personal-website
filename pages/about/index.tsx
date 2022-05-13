@@ -13,10 +13,11 @@ const About: NextPage = () => (
     <Layout>
       <div className="flex flex-col md:flex-row gap-5 pt-5">
         <p className="text-lg font-bold pr-8">
-          Hey, it's Colin. This is <span className="text-xs">technically</span>{" "}
-          my dog Koda. We spend a lot of time together solving problems and
-          going on short walks. Sometimes we play a round of disc golf, but when
-          we're not together I'm probably out running.
+          Hey, it&apos;s Colin. This is{" "}
+          <span className="text-xs">technically</span> my dog Koda. We spend a
+          lot of time together solving problems and going on short walks.
+          Sometimes we play a round of disc golf, but when we&apos;re not
+          together I&apos;m probably out running.
         </p>
         <Image
           alt="Koda, a cream colored shiba inu dog."
