@@ -28,8 +28,9 @@ const Home: NextPage = () => (
           </h2>
           <br />
           <h3 className="break-words text-lg md:pr-20 pr-0 pb-8">
-            I work as a growth engineer at Gusto. I&apos;ve been building apps
-            since 2015 and love working with Ruby on Rails and React.
+            I work as a full-stack growth engineer at Gusto, working mostly with
+            Ruby on Rails and React. I&apos;ve been building apps since 2015 and
+            love piecing together the legos of full-stack development.
           </h3>
         </div>
         <div className="flex flex-col items-end justify-center gap-1">
