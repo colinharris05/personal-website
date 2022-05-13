@@ -13,16 +13,15 @@ const LINKS = [
 ];
 
 const Footer = () => (
-  <div className="h-[10vh] flex justify-start items-end px-16 py-5 gap-5">
-    {LINKS.map(({ href, text }, index) => (
-      <>
+  <div className="h-[8vh] flex justify-end items-end px-16 py-5 gap-5 border-t-2 border-t-slate-100 mt-2">
+    {LINKS.map(({ href, text }) => (
+      <div className="text-slate-600" key={href}>
         <span>
           <Link href={href}>
             <a target="_blank">{text}</a>
           </Link>
         </span>
-        {index !== LINKS.length - 1 && <span>|</span>}
-      </>
+      </div>
     ))}
   </div>
 );

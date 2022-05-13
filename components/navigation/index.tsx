@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex flex-wrap items-center m-4 pb-5 border-b">
+      <nav className="flex flex-wrap items-center m-3 pb-3 border-b">
         {pathname !== "/" && (
           <Link href="/">
             <a className="inline-flex items-center px-2 mr-4 ">
