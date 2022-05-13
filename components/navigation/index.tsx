@@ -1,23 +1,28 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { pathname } = useRouter();
+
   const handleClick = () => setIsMenuOpen(!isMenuOpen);
 
   return (
     <>
       <nav className="flex flex-wrap items-center m-4 pb-5 border-b">
-        <Link href="/">
-          <a className="inline-flex items-center p-2 mr-4 ">
-            <span className="text-xl font-bold uppercase tracking-wide">
-              Colin
-            </span>
-          </a>
-        </Link>
+        {pathname !== "/" && (
+          <Link href="/">
+            <a className="inline-flex items-center px-2 mr-4 ">
+              <span className="text-xl font-bold tracking-wide fancy-font">
+                colin.
+              </span>
+            </a>
+          </Link>
+        )}
 
         <button
-          className=" inline-flex p-3 hover:bg-[#f45d48] rounded lg:hidden ml-auto hover:text-white outline-none"
+          className="inline-flex p-3 hover:bg-[#f45d48] rounded lg:hidden ml-auto hover:text-white outline-none"
           onClick={handleClick}
         >
           <svg
@@ -35,20 +40,25 @@ const Navbar = () => {
             />
           </svg>
         </button>
-
         <div
           className={`${
             isMenuOpen ? "" : "hidden"
           }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
         >
-          <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
+          <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto gap-5 lg:pr-3">
             <Link href="/">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-[#f45d48] hover:text-white ">
+              <a
+                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-[#f45d48] hover:text-white "
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Home
               </a>
             </Link>
             <Link href="/work">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-[#f45d48] hover:text-white">
+              <a
+                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-[#f45d48] hover:text-white"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Work
               </a>
             </Link>
