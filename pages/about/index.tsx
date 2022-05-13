@@ -10,7 +10,7 @@ const About: NextPage = () => (
       <meta name="description" content="Software engineer" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Layout>
+    <Layout classNames="min-h-[80vh]">
       <div className="flex flex-col md:flex-row gap-5 pt-5">
         <p className="text-lg font-bold pr-8">
           Hey, it&apos;s Colin. This is{" "}
