@@ -13,8 +13,8 @@ const Navbar = () => {
       <nav className="flex flex-wrap items-center m-3 pb-3 border-b">
         {pathname !== "/" && (
           <Link href="/">
-            <a className="inline-flex items-center px-2 mr-4 ">
-              <span className="text-xl font-bold tracking-wide fancy-font">
+            <a className="inline-flex items-center px-2 mr-4">
+              <span className="text-xl font-bold tracking-wide fancy-font relative top-2">
                 colin.
               </span>
             </a>
@@ -45,7 +45,7 @@ const Navbar = () => {
             isMenuOpen ? "" : "hidden"
           }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
         >
-          <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto gap-5 lg:pr-3">
+          <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto gap-2 lg:pr-3">
             <Link href="/">
               <a
                 className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-[#f45d48] hover:text-white "
@@ -60,14 +60,6 @@ const Navbar = () => {
                 onClick={handleClick}
               >
                 Work
-              </a>
-            </Link>
-            <Link href="/about">
-              <a
-                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-[#f45d48] hover:text-white"
-                onClick={handleClick}
-              >
-                About
               </a>
             </Link>
           </div>
