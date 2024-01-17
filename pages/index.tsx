@@ -20,10 +20,12 @@ const Home: NextPage = () => (
           </h1>
           <h2 className=" text-2xl">
             Software engineer with{" "}
-            <Link href="https://www.gusto.com">
-              <a className="text-[#f45d48]" target="_blank">
-                Gusto.
-              </a>
+            <Link
+              className="text-[#f45d48]"
+              href="https://www.gusto.com"
+              target="_blank"
+            >
+              Gusto
             </Link>
           </h2>
           <br />

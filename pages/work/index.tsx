@@ -63,28 +63,28 @@ const Work: NextPage = () => (
         <div className="flex flex-col gap-4 mb-10">
           {JOBS.map(
             ({ company, description, endDate, href, startDate }, index) => (
-              <Link href={href} key={company}>
-                <a
-                  className="hover:bg-slate-100 px-4 py-6 rounded"
-                  target="_blank"
-                >
-                  <div className="flex items-center justify-between pb-3">
-                    <h3
-                      className={`font-bold text-2xl mr-4 ${
-                        index === 0
-                          ? "text-[#f45d48] border-b-[#f45d48] border-b-2 pb-1"
-                          : ""
-                      }`}
-                      style={{ color: index === 0 ? "" : "" }}
-                    >
-                      {company}
-                    </h3>
-                    <span>
-                      {startDate} - {endDate}
-                    </span>
-                  </div>
-                  <p>{description}</p>
-                </a>
+              <Link
+                className="hover:bg-slate-100 px-4 py-6 rounded"
+                target="_blank"
+                href={href}
+                key={company}
+              >
+                <div className="flex items-center justify-between pb-3">
+                  <h3
+                    className={`font-bold text-2xl mr-4 ${
+                      index === 0
+                        ? "text-[#f45d48] border-b-[#f45d48] border-b-2 pb-1"
+                        : ""
+                    }`}
+                    style={{ color: index === 0 ? "" : "" }}
+                  >
+                    {company}
+                  </h3>
+                  <span>
+                    {startDate} - {endDate}
+                  </span>
+                </div>
+                <p>{description}</p>
               </Link>
             )
           )}

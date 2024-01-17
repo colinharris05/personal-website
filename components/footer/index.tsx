@@ -4,7 +4,7 @@ import React from "react";
 const LINKS = [
   {
     href: "https://github.com/colinharris05",
-    text: "Github",
+    text: "GitHub",
   },
   {
     href: "https://www.linkedin.com/in/colinharris05/",
@@ -17,8 +17,8 @@ const Footer = () => (
     {LINKS.map(({ href, text }) => (
       <div className="text-slate-600" key={href}>
         <span>
-          <Link href={href}>
-            <a target="_blank">{text}</a>
+          <Link href={href} target="_blank">
+            {text}
           </Link>
         </span>
       </div>
