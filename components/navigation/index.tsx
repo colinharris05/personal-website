@@ -20,6 +20,7 @@ const Navbar = () => {
         )}
 
         <button
+          aria-label="Colin Harris menu options"
           className="inline-flex p-3 hover:bg-[#f45d48] rounded lg:hidden ml-auto hover:text-white outline-none"
           onClick={handleClick}
         >

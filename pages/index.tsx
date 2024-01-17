@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import sharedStyles from "../styles/Shared.module.css";
 import type { NextPage } from "next";
 import Layout from "../components/layout";
 
@@ -40,6 +39,8 @@ const Home: NextPage = () => (
             alt="Colin Harris standing on the beach with the Golden Gate Bridge in the background."
             className="rounded-md"
             height={4493 * 0.14}
+            priority
+            sizes="(max-width: 420px) 100vw, 50vw"
             src="/images/me.jpg"
             width={2995 * 0.14}
           />
