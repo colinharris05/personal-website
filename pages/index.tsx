@@ -40,7 +40,7 @@ const Home: NextPage = () => (
             alt="Colin Harris standing on the beach with the Golden Gate Bridge in the background."
             className="rounded-md"
             height={4493 * 0.14}
-            src="/images/me.jpeg"
+            src="/images/me.jpg"
             width={2995 * 0.14}
           />
         </div>
