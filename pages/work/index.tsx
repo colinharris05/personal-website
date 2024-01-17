@@ -57,9 +57,6 @@ const Work: NextPage = () => (
     </Head>
     <div>
       <Layout>
-        <h1 className="text-5xl font-bold text-center pt-10 py-5 fancy-font">
-          Work
-        </h1>
         <div className="flex flex-col gap-4 mb-10">
           {JOBS.map(
             ({ company, description, endDate, href, startDate }, index) => (
